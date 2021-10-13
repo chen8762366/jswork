@@ -1,0 +1,204 @@
+ul li{
+    list-style-type:none;
+  }
+  .wrapepr{   
+  width: 1024px;
+      margin: 0 auto;
+  }
+  .main{
+      margin-bottom: 90px;
+  }
+  .header{
+      width: 100%;
+      height: 380px;
+      margin: 0 auto;
+      background:url('https://upload.cc/i1/2021/07/06/kRWOfX.png') no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .header h1{
+      padding: 50px 0 50px 0;
+      color: white;
+      font-size: 40px;
+      font-weight:lighter;
+  }
+  .header select{
+      appearance: none;
+      width: 400px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 3px solid #fff;
+      background: rgba(252, 252, 252, 0.6) url(https://upload.cc/i1/2021/07/06/0ZWtk9.png) no-repeat 95% center;
+      
+  }
+  
+  .popularLocation{
+      height: 150px;
+      width: 600px;
+      position: absolute;
+      top: 300px;
+      left:clac(50%-300px);
+      border-radius: 5px;
+      background: white;
+      box-shadow: 2px 2px 3px rgb(211, 208, 208);
+      padding: 0 20px 0 20px;
+  }
+  .popularLocation h2{
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 0 10px 0;
+  }
+  .popularButton{
+      padding-top: 30px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .popularButton input{
+      color: #fff;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      width: 110px;
+      padding: 10px 0 10px 0;
+  }
+  .popularButton input:hover{
+      color: red;
+      cursor: pointer;
+  }
+  .popularplace1{
+      background: #8A82CC;
+  }
+  .popularplace2{
+      background: #FFA782;
+  }
+  .popularplace3{
+      background: #F5D005;
+  }
+  .popularplace4{
+      background: #559AC8;
+  }
+  .location{
+      margin: 0 auto;
+      font-size: 20px;
+  }
+  
+  .showLoaction{
+      padding-top: 150px;
+      text-align: center;
+  }
+  .showLoaction h2{
+      font-size: 36px;
+      color:#8A82CC;
+  }
+  .noplace h2{
+      font-size: 36px;
+      color: red;
+  }
+  .locationList{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    
+  }
+  .locationList li{
+      border-radius: 5px;
+      width: 48%;
+  /*     padding: 20px 10px 20px 10px; */
+     
+  }
+  .place_picture{
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+      height: 155px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+  .place_picture h3{
+      font-size: 26px;
+  }
+  .place_list{
+      box-shadow: 2px 2px 3px rgb(247, 245, 245);
+    height:auto;
+  }
+  .place_list h3,.place_picture h3,.place_picture span{
+      padding: 5px 10px 5px 10px;
+  }
+  .tel_and_free{
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+  }
+  .back_to_select a{
+      background: url(https://upload.cc/i1/2021/07/06/27gxj1.png) no-repeat;
+      display: block;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      position: fixed;
+      bottom: 110px;
+      right: 210px;
+  }
+  .choose_page{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  .choose_page a{
+      text-decoration: none;
+      color: gray;
+      padding: 10px 15px 15px 5px;
+  }
+  .choose_page a:hover,.choose_page a.active,.footer a:hover{
+      color: red;
+  }
+  
+  .footer{
+      position: fixed;
+      bottom: 0;
+      background: #559AC8;
+      font-size: 14px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 90px;
+      width: 1024px;
+  }
+  
+  .footer h2{
+      color: #FFF;
+  /*     padding-bottom: 10px; */
+      
+  }
+  .footer a{
+      text-decoration: none;
+      color: #FFD366;
+  }
+  .name{
+    position: relative;
+    top: 50px;
+    left: 15px;
+    font-size: 24px;
+  }
+  .zone{
+    position: relative;
+    left: 400px;
+    bottom: 0;
+    font-size: 16px;
+  }
+  .title{
+    color:#fff;
+  }
+  .text{
+    position: relative;
+    top:-150px;
+  }
+  .right{
+    text-align:right;
+  }
