@@ -1,8 +1,8 @@
-var area = document.getElementById('Idlocation');//select宣告
-var list = document.querySelector('.locationList');//li宣告
-var place = document.querySelector('.place');//區域標題宣告
+const  area = document.getElementById('Idlocation');//select宣告
+const  list = document.querySelector('.locationList');//li宣告
+const  place = document.querySelector('.place');//區域標題宣告
  
-var data = [
+const  data = [
     {
         Ticketinfo: "免費參觀",
         Zone: "三民區",
@@ -1462,9 +1462,9 @@ var data = [
 ]
 
 function listAll() {
-  var str =''
-  var len = data.length;
-  for(var i=0;i<len;i++){
+  let str =''
+  let len = data.length;
+  for(let i=0;i<len;i++){
     console.log(i);
     str+=
         ` 
@@ -1490,21 +1490,21 @@ function listAll() {
 }
  
 
-var len =data.length;//獲取country陣列數
+const len =data.length;//獲取country陣列數
 // console.log(len)//確認有無抓到數值程式對不對
 function updateList(e){
   //顯示資料
-  var select = e.target.value;//了解目前所在元素位置
-  var str ='';
-  var temp = '';//標題區
-  for(var i =0;i<len;i++){
+  let select = e.target.value;//了解目前所在元素位置
+  let str ='';
+  let temp = '';//標題區
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       temp= data[i].Zone
     }
   } 
   place.innerHTML = temp; 
   //內容區
-  for(var i =0;i<len;i++){
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       str+=
         ` 
@@ -1530,12 +1530,12 @@ function updateList(e){
   list.innerHTML = str;//插入內容  
 }
 
-var el =document.querySelector(".popularplace1");//苓雅區按鈕
+const el =document.querySelector(".popularplace1");//苓雅區按鈕
 el.addEventListener('click',function(e){
-  var select = e.target.value;//了解目前所在元素位置
-  var str ='';
-   var temp = '';//標題區
-  for(var i =0;i<len;i++){
+  let select = e.target.value;//了解目前所在元素位置
+  let str ='';
+   let temp = '';//標題區
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       temp= data[i].Zone
     }
@@ -1565,18 +1565,18 @@ el.addEventListener('click',function(e){
   }
   list.innerHTML = str;//插入內容
 })
-var el =document.querySelector(".popularplace2");//三民區按鈕
+// const el =document.querySelector(".popularplace2");//三民區按鈕
 el.addEventListener('click',function(e){
-  var select = e.target.value;//了解目前所在元素位置
-  var str ='';
-   var temp = '';//標題區
-  for(var i =0;i<len;i++){
+  let select = e.target.value;//了解目前所在元素位置
+  let str ='';
+   let temp = '';//標題區
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       temp= data[i].Zone
     }
   } 
     place.innerHTML = temp; 
-  for(var i =0;i<len;i++){
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       str+=` 
       <li>
@@ -1601,18 +1601,18 @@ el.addEventListener('click',function(e){
   }
   list.innerHTML = str;//插入內容
 })
-var el =document.querySelector(".popularplace3");//美濃區按鈕
+// const el =document.querySelector(".popularplace3");//美濃區按鈕
 el.addEventListener('click',function(e){
-  var select = e.target.value;//了解目前所在元素位置
-  var str ='';
-   var temp = '';//標題區
-  for(var i =0;i<len;i++){
+  let select = e.target.value;//了解目前所在元素位置
+  let str ='';
+   let temp = '';//標題區
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       temp= data[i].Zone
     }
   } 
     place.innerHTML = temp; 
-  for(var i =0;i<len;i++){
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       str+=` 
       <li>
@@ -1637,18 +1637,18 @@ el.addEventListener('click',function(e){
   }
   list.innerHTML = str;//插入內容
 })
-var el =document.querySelector(".popularplace4");//茂林區按鈕
+// const el =document.querySelector(".popularplace4");//茂林區按鈕
 el.addEventListener('click',function(e){
-  var select = e.target.value;//了解目前所在元素位置
-  var str ='';
-   var temp = '';//標題區
-  for(var i =0;i<len;i++){
+  let select = e.target.value;//了解目前所在元素位置
+  let str ='';
+   let temp = '';//標題區
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       temp= data[i].Zone
     }
   } 
     place.innerHTML = temp; 
-  for(var i =0;i<len;i++){
+  for(let i =0;i<len;i++){
     if(select == data[i].Zone){
       str+=` 
       <li>
