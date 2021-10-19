@@ -1,6 +1,7 @@
 var area = document.getElementById('Idlocation');//select宣告
 var list = document.querySelector('.locationList');//li宣告
 var place = document.querySelector('.place');//區域標題宣告
+ 
 var data = [
     {
         Ticketinfo: "免費參觀",
@@ -1460,6 +1461,35 @@ var data = [
     }       
 ]
 
+function listAll() {
+  var str =''
+  var len = data.length;
+  for(var i=0;i<len;i++){
+    console.log(i);
+    str+=
+        ` 
+      <li> 
+        <div class="place_list">
+        <img src="${data[i].Picture1}" alt="景點照片" width=100% height=250px;>
+          <div class="text">
+            <h3 class="title name">${data[i].Name}</h3>
+            <h4 class="title zone">${data[i].Zone}</h4>
+          </div>
+          <p>
+          <img src="https://chiyum.github.io/ajaxmani/img/icons_clock.png" alt="時鐘">${data[i].Opentime}</p>
+          <p>
+          <img src="https://chiyum.github.io/ajaxmani/img/icons_pin.png" alt="地標">${data[i].Add}</p> 
+          <p>
+          <img src="https://chiyum.github.io/ajaxmani/img/icons_phone.png" alt="電話">${data[i].Tel}</p>
+          <p class="right">
+          <img src="https://chiyum.github.io/ajaxmani/img/icons_tag.png" alt="圖標">${data[i].Ticketinfo}</p>
+        </div>
+      </li>`
+    }
+  list.innerHTML = str;
+}
+ 
+
 var len =data.length;//獲取country陣列數
 // console.log(len)//確認有無抓到數值程式對不對
 function updateList(e){
@@ -1498,7 +1528,6 @@ function updateList(e){
     }
   }
   list.innerHTML = str;//插入內容  
-   
 }
 
 var el =document.querySelector(".popularplace1");//苓雅區按鈕
@@ -1644,5 +1673,6 @@ el.addEventListener('click',function(e){
   }
   list.innerHTML = str;//插入內容
 })
-
-area.addEventListener('change',updateList)//事件監聽
+ 
+area.addEventListener('change',updateList)//事件監聽 
+listAll(); 
